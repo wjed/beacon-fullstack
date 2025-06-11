@@ -23,10 +23,11 @@ const Chat = (props) => {
     <Box
       ref={boxRef}
       sx={{
-        backgroundColor: "#f0f0f0",
+        backgroundColor: "#f5f7f9",
         paddingBottom: "20px",
         overflowY: "auto",
         maxHeight: "650px",
+        borderRadius: 2,
       }}
     >
       {history?.length > 0 ? (
@@ -41,6 +42,7 @@ const Chat = (props) => {
                     marginLeft: "auto",
                     color: "white",
                     width: "65%",
+                    borderRadius: 2,
                   }}
                 >
                   <CardContent>
@@ -51,7 +53,12 @@ const Chat = (props) => {
 
               <Card
                 raised
-                sx={{ bgcolor: "text.secondary", color: "white", width: "65%" }}
+                sx={{
+                  bgcolor: "text.secondary",
+                  color: "white",
+                  width: "65%",
+                  borderRadius: 2,
+                }}
               >
                 <CardContent>
                   <Typography>{msg.response}</Typography>
