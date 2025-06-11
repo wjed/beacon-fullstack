@@ -143,17 +143,19 @@ const App = (props) => {
         alignItems: "center",
         minHeight: "100vh",
         padding: "30px",
-        backgroundColor: "#f0f0f0",
+        background: "linear-gradient(135deg, #fef6ec 0%, #ffffff 100%)",
       }}
     >
       <Paper
         sx={{
           padding: 8,
           maxWidth: 600,
+          boxShadow: 4,
+          borderRadius: 3,
         }}
       >
         <Typography variant="h5" sx={{ textAlign: "center" }}>
-          AWS Q&A
+          Amazon Beacon
         </Typography>
         <br></br>
         <br></br>
